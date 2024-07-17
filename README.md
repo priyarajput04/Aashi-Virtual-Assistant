@@ -118,11 +118,15 @@ The virtual assistant has several key functions, each responsible for a specific
     ```
 
 ### Main Loop
-The main loop listens for commands and executes the corresponding functions. The loop continues to run until the user explicitly stops it.
+In the main loop, adding the functionality for writing and sending an email involves recognizing the user's command, prompting for the email details (recipient and content), and using the sendEmail function to send the email.
+
+Here’s how to integrate the email functionality into the main loop:
 
 ```python
 if __name__ == "__main__":
     wishMe()
     while True:
         query = takeCommand()
+
+    # Logic for executing tasks based on query
     ```
